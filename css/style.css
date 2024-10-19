@@ -1,389 +1,544 @@
-/* common css start  */
-*{
-  margin: 0;
-  padding: 0;
-} 
-
-a{
-  text-decoration: none;
-display: inline-block;
+/*===============================
+      Common css part star  
+ ===============================*/
+ *{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+ a{
+   text-decoration: none;
+   display: inline-block;
 }
 ul{
-  list-style: none;
+   list-style: none;
 }
-/* .menu ul li:first-child a{
-  background-color: orange;
-  color: red;
+img{
+   vertical-align: middle;
 }
- .menu ul li:last-child a{
-  background-color: orange;
-  color: red;
-}  */
-  
-/* .menu ul li:nth-child(5) a{
-  background-color: orchid;
-  color: #FFF;
-}  */
-
-/* common css end  */
-
-/* Practice 6  */
-.container{
-  background: url(../images/banner.jpg);
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  z-index: 1;
-}
-.container::after{
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.315);
-  z-index: -1;
-}
-.btn{
-  position: absolute;
-  top: 500px;
-  left: 150px;
-  background-color: rgba(0, 0, 0, 0.459);
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
-  border: 1px solid #FFf;
-
-}
-
-.btn a{
-  font-size: 20px;
-  font-weight: bold;
-  padding: 15px 50px;
-  color: white;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px
-}
-.btn a:hover{
-  background-color: green;
-  color: #FFf;
-;
-}
-.menu{
-  background-color: White;
-  padding: 30px 0;
-}
-.menu ul{
-  text-align: center;
-}
-.menu ul li {
-  display: inline-block;
-  position: relative;
-}
-.menu ul li a{
-  font-size: 18px;
-  font-weight: bold;
-  font-family: sans-serif;
-  text-transform: capitalize;
-  padding: 10px 20px;
-  color: black;
-  display: block;
-}
-
-.menu ul li ul{
-  position: absolute;
-  top: 50px;
-  left: 0;
-  width: 170px;
-  background-color: #DDDEDF;
-  display: none;
-}
-.menu ul li:hover ul{
-  display: block;
-}
-.menu ul li ul li{
-  width: 100%;
-}
-.menu ul li li a:hover{
-  background-color: #B3D33B;
-}
-.box1{
-  position: relative;
-z-index: 1;
-}
-.box1::after{
-  position: absolute;
-  content: " ";
-  top: -7px;
-  left: 13px;
-  background-color: #DDDEDF;
-  width: 20px;
-  height: 20px;
-  rotate: 42deg;
-  z-index: -1;
-} 
-/* Practice 5  */
-/* .menu {
-  background-color: cornflowerblue;
-}
-.menu ul{
-  text-align: center;
-}
-.menu ul li {
-  display: inline-block;
-  margin: 0 -2px;
-  position: relative;
-}
-.menu ul li a{
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: capitalize;
-  color: #fff;
-  padding: 10px 20px;
-  background-color: transparent;
-  position: relative;
-  display: block;
-}
-.menu ul li a:hover{
-  background-color: orange;
-}
-.menu ul li a::after{
-  position: absolute;
-  content: " ";
-  top: 0;
-  left: 0;
-  width: 0%;
-  height: 2px;
-  background-color: red;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-}
-.menu ul li a:hover::after{
-  width: 100%;
-}
-.menu ul li ul{
-  position: absolute;
-  top: 43px;
-  left: -43px;
-  width: 200px;
-  background-color:gray;
-  display: none;
-}
-.menu ul li:hover > ul{
-  display: block;
-}
-.menu ul li ul li {
-width: 100%;
-position: relative;
-}
-.menu ul li ul li ul{
-  position: absolute;
-  top: 0;
-  left: 200px;
-} */
-
-
-/* practice 04 */
-/* .menu{
-  background-color: tomato;
-}
-.menu ul{
-  text-align: center;
-}
-.menu ul li{
-  display: inline-block;
-  margin: 0 -2px;
-  position: relative;
-}
-.menu ul li a{
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: capitalize;
-  padding: 10px 20px;
-  background-color: greenyellow;
-  color: blue;
-position: relative;
-display: block;
-}
-.menu ul li a:hover{
-  background-color: cornflowerblue;
-  color: #fff;
-  }
-.menu ul li a::after{
+/*===============================
+      Common css part end  
+ ===============================*/
+/*===============================
+      Nav menu part start  
+ ===============================*/
+ #full_width{
+   width: 100%;
+   height: 90px;
    position: absolute;
-   content: " ";
-   top: 0;
-   left: 0;
-   width: 0%;
-   height: 2px;
-   background-color: red;
-   transition: 0.5s;
-   -webkit-transition: 0.5s;
-   -moz-transition: 0.5s;
-   -ms-transition: 0.5s;
-   -o-transition: 0.5s;
+   background-color: rgba(10, 1, 1, 0.205);
+ }
+.container{
+   width: 1170px;
+   margin: 0 auto;
 }
-.menu ul li a:hover::after{
-  width: 100%;
-  }
-.menu ul li ul{
-  position: absolute;
-  top: 43px;
-  left: -43px;
-  width: 200px;
-  background-color:gray;
-  display: none;
+.nav_main{
+   display: flex;
+   justify-content: space-between;
 }
-.menu ul li:hover > ul{
-  display: block;
+.logo img {
+   width: 100%;
+   padding-top: 32px;
 }
-.menu ul li ul li{
-  width: 100%;
-  position: relative;
+
+.nav_menu ul li {
+   display: inline-block;
+} 
+.nav_menu ul li a{
+   font-size: 16px;
+   font-family: "Roboto", sans-serif;
+   font-weight: 600;
+   text-transform: uppercase;
+   line-height: 90px;
+   color: #f5f5f5;
+   padding: 0 20px;
+   line-height: 90px;
 }
-.menu ul li ul li ul{
-  position: absolute;
-  top: 0;
-  left: 180px;
-} */
-
-
-
-/* Practice 03  */
-
-
-/* .menu{
-  background-color: tomato;
+/*===============================
+      Nav menu part end  
+ ===============================*/
+/*===============================
+      Banner part start  
+ ===============================*/
+ #banner{
+   background: url(../images/Banner.jpg)no-repeat center / cover;
+   padding: 322px 0 242px 0;
+ }
+ .banner_text {
+   text-align: center;
+   color: #f5f5f5;
+ }
+ .banner_text h1{
+   font-family: "Roboto", sans-serif;
+   font-size: 50px;
+   font-weight: 600;
+   color: #ffffff;
+   text-transform: uppercase;
+   line-height: 51px;
+ }
+ .banner_text h2{
+   font-family:  "Roboto Slab", serif;
+   font-size: 40px;
+   font-weight: 300;
+   color: #ffffff;
+   text-transform: uppercase;
+   line-height: 50px;
+   letter-spacing: 4px;
 }
-.menu ul{
+ .banner_text p{
+   font-family:  "Roboto Slab", serif;
+   font-size: 16px;
+   font-weight: 300;
+   color: #ffffff;
+   text-transform: uppercase;
+   line-height: 31px;
+ }
+/*===============================
+      Banner part end  
+ ===============================*/
+/*===============================
+      Offer part start  
+ ===============================*/
+ #offer{
+   padding: 69px 0 82px 0;
+ }
+ .offer_head{
+   text-align: center;
+ }
+ .offer_head h2{
+   font-family:  "Roboto Slab", serif;
+   font-size: 30px;
+   font-weight: 300;
+   color: #444444;
+   padding-bottom: 20px;
+ }
+ .offer_head p{
+   font-family: "Roboto", serif;
+   font-size: 16px;
+   font-weight: 400;
+   color: #666666;
+   padding-bottom: 70px;
+ }
+ .offer_head h3{
+   font-family: "Roboto", serif;
+   font-size: 18px;
+   font-weight: 600;
+   color: #444444;
+   text-transform: uppercase;
+ }
+ .offer_main{
+   padding-top: 22px;
+   display: flex;
+   justify-content: space-between;
+ }
+ .offer_item{
+   width: 31.6%;
+ }
+ .offer_inner {
   text-align: center;
+  border: 1px solid #e3e3e3;
+  padding: 15px 15px 11px 15px;
 }
-.menu ul li{
+ .offer_inner img{
+   width: 100%;
+ }
+ .offer_inner h4{
+   font-family: "Roboto", serif;
+   font-size: 18px;
+   font-weight: 600;
+   color: #444444;
+   text-transform: uppercase;
+   padding: 18px 0 5px 0;
+ }
+
+ .offer_inner p {
+   font-family: "Robot", sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   color: #666666;
+   padding-bottom: 9px;
+   line-height: 23px;
+}
+/*===============================
+      Offer part end  
+ ===============================*/
+/*===============================
+      Latest part start  
+ ===============================*/
+ #latest {
+  padding: 42px 0 50px 0;
+  background-color: #2c2c2c;
+}
+.latest_head{
+  text-align: center;
+  color: #ffffff;
+ }
+ .latest_head h2{
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #d5d5d5;
+  text-transform: uppercase;
   display: inline-block;
-  margin: 0 -2px;
   position: relative;
 }
-.menu ul li a{
-  font-size: 20px;
-  font-weight: bold;
-  padding: 10px 20px;
-  background-color: transparent;
-  color: #fff;
-position: relative;
-font-family: sans-serif;
-display: block;
-}
-.menu ul li a:hover{
-  background-color: cornflowerblue;
-}
-.menu ul li a::after{
+.latest_head h2::after {
+  content: "";
   position: absolute;
-  content: " ";
-  top: 0;
-  left: 0;
-  width: 0%;
-  height: 2px;
-  background-color: black;
-  transition:0.5s;
-  -webkit-transition:0.5s;
-  -moz-transition:0.5s;
-  -ms-transition:0.5s;
-  -o-transition:0.5s;
+  top: 15px;
+  left: -114px;
+  width: 100px;
+  height: 1px;
+  background-color: #535353;
 }
-.menu ul li a:hover::after{
+.latest_head h2::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: -114px;
+  width: 100px;
+  height: 1px;
+  background-color: #535353;
+}
+.latest_main{
+  padding-top: 38px;
+  display: flex;
+}
+.latest_item{
+  width: 25%;
+}
+.latest_item img{
   width: 100%;
 }
-.menu ul li ul{
-  position: absolute;
-  top: 43px;
-  left: -43px;
-  background-color: gray;
-  width: 180px;
-  display: none;
+.instra_btn{
+  text-align: center;
+  color: #ffff;
+  padding-top: 59px;
 }
-.menu ul li:hover > ul{
-  display: block;
+.instra_btn i{
+  font-size: 18px;
+  padding-right: 5px;
 }
-.menu ul li ul li{
-  width: 100%;
-  position: relative;
+.instra_btn a {
+  font-family: "Robot", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 18px 25px;
+  border: 1px solid #797979;
+  color: #a6a6a6;
+  text-transform: uppercase;
 }
-.menu ul li ul li ul{
-  position: absolute;
-  top: 0;
-  left: -180px;
-} */
-
-/* Practice 2 */
-/* .menu{
-  background-color: tomato;
-}
-.menu ul{
+/*===============================
+      Latest part end  
+ ===============================*/
+/*===============================
+      Journal part start  
+ ===============================*/
+ #journal{
+  padding: 72px 0 73px 0;
+ }
+ .journal_head{
   text-align: center;
 }
-.menu ul li{
-display: inline-block;
-margin: 0 -2px;
-position: relative;
-}
-.menu ul li a{
-  font-weight: bold;
-  padding:10px 20px;
-  background-color: transparent;
-  color: wheat;
+.journal_head h2{
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 600;
   font-size: 20px;
+  color: #444444;
+  text-transform: uppercase;
+  display: inline-block;
   position: relative;
-  text-transform: capitalize;
-  display: block;
 }
-.menu ul li a:hover{
-  background-color: teal;
-}
-.menu ul li a::after{
+.journal_head h2::after {
+  content: "";
   position: absolute;
-  content: " ";
-  top: 0;
-  left: 0;
-  width: 0%;
-  height: 2px;
-  background-color:black;
-  transition:0.5s;
-  -webkit-transition:0.5s;
-  -moz-transition:0.5s;
-  -ms-transition:0.5s;
-  -o-transition:0.5s;
-  font-family: sans-serif;
+  top: 15px;
+  left: -114px;
+  width: 100px;
+  height: 1px;
+  background-color: #535353;
 }
-.menu ul li a:hover::after{
-  width: 100%;
-}
-.menu ul li ul{
+.journal_head h2::before {
+  content: "";
   position: absolute;
-  top: 43px;
-  left: -43px;
-  width: 200px;
-  background-color: gray;
-  display: none;
+  top: 15px;
+  right: -114px;
+  width: 100px;
+  height: 1px;
+  background-color: #535353;
 }
-.menu ul li:hover > ul{
-  display: block;
+.journal_main{
+  display: flex;
+  justify-content: space-between;
 }
-.menu ul li ul li{
+.journal_item {
+  width: 31.7%;
+  padding-top: 24px;
+}
+.journal_inner {
+  padding: 20px 0 28px 0;
+  border: 1px solid #e3e3e3;
+}
+.journal_inner h3{
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #444444;
+  text-align: center;
+  padding-bottom: 8px;
+}
+.journal_inner h5{
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #999999;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.journal_inner img{
   width: 100%;
-  position: relative;
 }
 
-.menu ul li ul li ul{
+.journal_para p {
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  color: #666666;
+  font-size: 16px;
+  padding: 17px 11px 13px 26px;
+  text-align: left;
+  line-height: 22px;
+
+}
+.journal_icon{
+  display: flex;
+  justify-content: space-between;
+}
+.journal_texT{
+  width: 70%;
+}
+.journal_texT p{
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #999999;
+  padding-left: 26px;
+  position: relative;
+  text-transform: uppercase;
+}
+.journal_texT p::after {
   position: absolute;
-  top: 0;
-  left: -200px;
-} */
+  content: " ";
+  top: 25px;
+  left: 26px;
+  width: 66%;
+  height: 1px;
+  background-color: #28b8d8;
+}
+.journal_num{
+  width: 30%;
+  padding-left: 52px;
+}
+
+/*===============================
+      Journal part end  
+ ===============================*/
+/*===============================
+      About me part start  
+ ===============================*/
+ 
+ .about_head{
+  padding-bottom: 20px;
+ }
+ .about_head h2{
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #444444;
+  text-transform: uppercase;
+  position: relative;
+}
+.about_head h2::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 215px;
+  width: 100px;
+  height: 1px;
+  background-color: #d9d9d9;
+}
+.about_main{
+  display: flex;
+}
+.about_item{
+  width: 50%;
+
+}
+.about_img_main{
+  display: flex;
+}
+.about_img{
+  width: 35%;
+  padding-top: 5px;
+
+}
+.about_img img{
+  padding-top: 5px;
+  width: 100%;
+}
+.about_img_text{
+  width: 65%;
+  padding-left: 22px;
+}
+.about_img_text h5{
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #666666;
+  line-height: 27px;
+}
+.about_img_text p{
+  font-family: "Roboto ", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #666666;
+  padding-top: 18px;
+  line-height: 25px;
+}
+.about_text{
+  width: 50%;
+  padding-left: 20px;
+}
+.service_head h2{
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #444444;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 20px;
+}
+.service_head h2::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 149px;
+  width: 100px;
+  height: 1px;
+  background-color: #d9d9d9;
+}
+.service_text{
+  position: relative;
+  padding-left: 70px;
+  padding-bottom: 18px;
+}
+.service_text i{
+  position: absolute;
+   top: 3px;
+   left: 6px;
+   font-size: 41px;
+}
+.service_text h4{
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #444444;
+  padding-bottom: 7px;}
+.service_text p{
+  font-family: "Roboto ", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #444444;
+  line-height: 24px;}
+/*===============================
+      About me part end  
+ ===============================*/
+/*===============================
+      Footer part start  
+ ===============================*/
+  #footer{
+    padding: 50px 0;
+    background-color: #373737;
+  }
+  .footer_main {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer_item{
+    width: 23%;
+  }
+  .footer_head h3{
+    font-family: "Roboto ", sans-serif;
+   font-weight: 600;
+   font-size: 18px;
+   color: #f0f0f0;
+   text-transform: uppercase;
+   padding-bottom: 15px;
+   }
+   .footer_inner .ft_para{
+    padding-bottom: 26px;
+   }
+  .footer_inner p{
+    font-family: "Roboto ", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #cacaca;
+    padding-bottom: 5px;
+    line-height: 24px;
+    }
+  .footer_icon{
+    position: relative;
+  }
+  .footer_icon i{
+    position: absolute;
+    top: 4px;
+    left: 0;
+    color: #cacaca ;
+  }
+  .footer_icon p{
+    padding-left: 28px;
+    color: #cacaca;
+  }
+  .footer_clm2 p{
+    font-family: "Roboto ", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #cacaca;
+    padding-bottom: 10px;
+    line-height: 24px;
+  }
+  .footer_clm3 p{
+    font-family: "Roboto ", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #cacaca;
+    padding-top: 21px ;
+    line-height: 24px;
+  }
+  .footer_inner span{
+    color: #929292;  
+  }
+
+/*===============================
+      Footer part end  
+ ===============================*/
+/*===============================
+      Copyright part start  
+ ===============================*/
+ .copyright{
+  background-color: #333333;
+  height: 90px;
+ }
+ .copy_head p{
+  font-family: "Roboto ", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #cacaca;
+  line-height: 90px;
+ }
+/*===============================
+      Copyright part end  
+ ===============================*/
+
+
+
+
